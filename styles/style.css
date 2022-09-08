@@ -39,7 +39,8 @@ img {
     justify-items: center;
     position: sticky;
     top: 0;
-    padding: 0 20px
+    padding: 0 20px;
+    z-index: 1;
 }
 
 .header__item__logo img {
@@ -60,6 +61,8 @@ img {
     list-style: none;
     margin: 0 10px;
     padding-bottom: 5px;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 1px solid transparent;
 }
 
 .navbar__menu li:hover {
@@ -190,8 +193,17 @@ i.fa-solid.fa-bars{
     gap: 15px;
 }
 
+.main__section__content__menu__columns__column {
+   overflow: hidden;
+}
+
 .main__section__content__menu__columns img {
     border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.main__section__content__menu__columns img:hover {
+    transform: scale(1.2);
 }
 
 .main__section__content__menu__items ul {
@@ -211,6 +223,7 @@ i.fa-solid.fa-bars{
 .main__section__content__contact__columns__column{
     padding:50px;
 }
+
 .main__section__content__contact__columns__column--gray{
 background-color: #dddada;
 }
@@ -254,6 +267,7 @@ background-color: #4e6658;
     background-color: #4e6658;
     color: #effbf1;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 .main__section__content__contact__columns__column__form__buttons button:hover{
     background-color: #4e66586e;
@@ -292,9 +306,15 @@ background-color: #4e6658;
 .galery__item {
     padding: 10px;
     background-color: #4e6658;
+    overflow: hidden;
+     
 }
 .galery__item img{
     width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.galery__item:hover img {
+    transform: scale(1.2);
 }
 
 .galery__item--1{
