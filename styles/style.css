@@ -7,30 +7,20 @@
     font-family: 'Lato', sans-serif;
     color: #636363;
 }
-a{
+
+a {
     text-decoration: none;
 }
-p{
-    margin-top: 0!important;
-    margin-bottom: 0!important;
+ul, li{
+    padding-left: 0;
 }
 
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 img {
     max-width: 100%;
-}
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer"
-    ;
 }
 
 .header {
@@ -80,17 +70,18 @@ img {
     text-decoration: none;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     color: transparent;
     border: 0;
 }
-i.fa-solid.fa-bars{
+
+i.fa-solid.fa-bars {
     color: #effbf1;
 }
 
 .header__item__reservas {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
 }
@@ -104,10 +95,11 @@ i.fa-solid.fa-bars{
 .header__item__reservas a p {
     color: #effbf1;
     font-weight: 300;
+    margin-bottom:0;
 }
 
 .main {
-    display:grid;
+    display: grid;
     grid-area: main;
     flex-direction: column;
     background-color: #effbf1;
@@ -129,8 +121,9 @@ i.fa-solid.fa-bars{
 
 .main__image--carta {
     background-image: url(../asset/images1/carta.jpg);
-    
+
 }
+
 .main__image--recetas {
     background-image: url(../asset/images1/recetas.jpg);
 }
@@ -139,13 +132,6 @@ i.fa-solid.fa-bars{
     background-image: url(../asset/images1/contac.jpg);
 }
 
-.main__section {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 32px;
-    margin: auto;
-    max-width: 1200px;
-}
 
 .main__section__header {
     text-align: center;
@@ -169,7 +155,7 @@ i.fa-solid.fa-bars{
 
 .main__section__content--grid {
     display: grid;
-    flex-direction:initial;
+    flex-direction: initial;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
@@ -194,7 +180,7 @@ i.fa-solid.fa-bars{
 }
 
 .main__section__content__menu__columns__column {
-   overflow: hidden;
+    overflow: hidden;
 }
 
 .main__section__content__menu__columns img {
@@ -216,52 +202,58 @@ i.fa-solid.fa-bars{
     align-items: center;
 }
 
-.main__section__content__contact__columns{
-    display:grid;
+.main__section__content__contact__columns {
+    display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.main__section__content__contact__columns__column{
-    padding:50px;
+
+.main__section__content__contact__columns__column {
+    padding: 50px;
 }
 
-.main__section__content__contact__columns__column--gray{
-background-color: #dddada;
+.main__section__content__contact__columns__column--gray {
+    background-color: #dddada;
 }
 
-.main__section__content__contact__columns__column--green{
-background-color: #4e6658;
+.main__section__content__contact__columns__column--green {
+    background-color: #4e6658;
 }
-.main__section__content__contact__columns__column__form{
- display: grid;
+
+.main__section__content__contact__columns__column__form {
+    display: grid;
 }
-.main__section__content__contact__columns__column__form label{
+
+.main__section__content__contact__columns__column__form label {
     display: grid;
     margin-bottom: 10px;
     color: #4e6658;
 }
-.main__section__content__contact__columns__column__form label span{
+
+.main__section__content__contact__columns__column__form label span {
     margin-bottom: 5px;
     color: #4e6658;
     font-weight: 600;
 }
-.main__section__content__contact__columns__column__form input{
+
+.main__section__content__contact__columns__column__form input {
     padding: 5px;
     color: #4e6658;
 }
-.main__section__content__contact__columns__column__form textarea{
+
+.main__section__content__contact__columns__column__form textarea {
     padding: 5px;
     color: #4e6658;
     margin-bottom: 20px;
 }
 
-.main__section__content__contact__columns__column__form__buttons{
+.main__section__content__contact__columns__column__form__buttons {
     display: inline-flex;
     justify-content: flex-end;
 }
 
-.main__section__content__contact__columns__column__form__buttons button{
+.main__section__content__contact__columns__column__form__buttons button {
     margin-left: 10px;
-    padding:10px 20px;
+    padding: 10px 20px;
     border-radius: 5px;
     border: 0;
     background-color: #4e6658;
@@ -269,30 +261,33 @@ background-color: #4e6658;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
-.main__section__content__contact__columns__column__form__buttons button:hover{
+
+.main__section__content__contact__columns__column__form__buttons button:hover {
     background-color: #4e66586e;
     color: #4e6658;
 }
 
-.main__section__content__contact__columns__column__form__buttons button.grey{
+.main__section__content__contact__columns__column__form__buttons button.grey {
     background-color: #4e66586e;
     color: #4e6658;
 }
-.main__section__content__contact__columns__column__form__buttons button.grey:hover{
+
+.main__section__content__contact__columns__column__form__buttons button.grey:hover {
     background-color: #4e6658;
     color: #effbf1;
 }
 
-.main__section__content__contact__columns__column__content{
+.main__section__content__contact__columns__column__content {
     margin-top: 20px;
 }
-.main__section__content__contact__columns__column__content p{
+
+.main__section__content__contact__columns__column__content p {
     color: #effbf1;
 }
 
 
 .main__section__content__galery {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 0.75em;
@@ -307,66 +302,70 @@ background-color: #4e6658;
     padding: 10px;
     background-color: #4e6658;
     overflow: hidden;
-     
+
 }
-.galery__item img{
+
+.galery__item img {
     width: 100%;
     transition: all 0.3s ease-in-out;
 }
+
 .galery__item:hover img {
     transform: scale(1.2);
 }
 
-.galery__item--1{
+.galery__item--1 {
     grid-area: item1;
 }
-.galery__item--2{
+
+.galery__item--2 {
     grid-area: item2;
 }
-.galery__item--3{
+
+.galery__item--3 {
     grid-area: item3;
 }
-.galery__item--4{
+
+.galery__item--4 {
     grid-area: item4;
 }
-.galery__item--5{
+
+.galery__item--5 {
     grid-area: item5;
 }
-.galery__item--6{
+
+.galery__item--6 {
     grid-area: item6;
 }
-.galery__item--7{
+
+.galery__item--7 {
     grid-area: item7;
 }
-.galery__item--8{
+
+.galery__item--8 {
     grid-area: item8;
 }
-.galery__item--9{
+
+.galery__item--9 {
     grid-area: item9;
 }
-.galery__item--10{
+
+.galery__item--10 {
     grid-area: item10;
 }
 
 .footer {
-    display: grid;
-    grid-area: footer;
-    grid-template-columns: auto 1fr auto;
     justify-items: center;
     background-color: #4e6658;
-    padding: 20px;
 }
 
 .footer__column {
     display: flex;
     align-items: center;
- }
-
-.footer__column__logo {
-    width: 100px;
 }
+
 .footer__column__logo img {
-    max-width: 100%;
+    width: 80px;
 }
 
 .footer__column__list {
@@ -391,16 +390,15 @@ background-color: #4e6658;
 .footer__column__social i {
     font-size: 24px;
     color: #effbf1;
-} 
+}
 
 /*Mobile*/
-@media screen and (max-width: 769px){
+@media screen and (max-width: 769px) {
     .header {
         height: auto;
-        padding: 15px 20px;
-        position: initial; 
+        position: initial;
     }
-    
+
     .header__item__logo {
         width: 85px;
         display: flex;
@@ -409,23 +407,23 @@ background-color: #4e6658;
 
     .navbar {
         display: flex;
-        align-items:center;
+        align-items: center;
     }
-    
+
     .navbar__menu {
         display: flex;
         text-align: center;
     }
-    
+
     .navbar__menu li {
         margin-right: 0;
         margin-left: 8px;
     }
-    
+
     .navbar__menu li a {
         font-size: 14px;
     }
-    
+
     .header__item__reservas {
         display: none;
     }
@@ -440,61 +438,67 @@ background-color: #4e6658;
     }
 
     .main__section {
-        padding: 50px 20px; 
+        padding: 50px 20px;
     }
 
     .main__section__content--grid {
         grid-template-columns: 1fr;
     }
 
-    .main__section__content__contact__columns{
+    .main__section__content__contact__columns {
         grid-template-columns: 1fr;
     }
 
-    .main__section__content__contact__columns__column{
-        padding:30px 15px;
+    .main__section__content__contact__columns__column {
+        padding: 30px 15px;
     }
 
     .main__section__content__galery {
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 0.75em;
         grid-template-areas: none;
     }
 
-    .galery__item--1{
-        grid-area:unset;
+    .galery__item--1 {
+        grid-area: unset;
     }
-    .galery__item--2{
-        grid-area:unset;
+
+    .galery__item--2 {
+        grid-area: unset;
     }
-    .galery__item--3{
-        grid-area:unset;
+
+    .galery__item--3 {
+        grid-area: unset;
     }
-    .galery__item--4{
-        grid-area:unset;
+
+    .galery__item--4 {
+        grid-area: unset;
     }
-    .galery__item--5{
-        grid-area:unset;
+
+    .galery__item--5 {
+        grid-area: unset;
     }
-    .galery__item--6{
-        grid-area:unset;
+
+    .galery__item--6 {
+        grid-area: unset;
     }
-    .galery__item--7{
-        grid-area:unset;
+
+    .galery__item--7 {
+        grid-area: unset;
     }
-    .galery__item--8{
-        grid-area:unset;
+
+    .galery__item--8 {
+        grid-area: unset;
     }
-    .galery__item--9{
-        grid-area:unset;
+
+    .galery__item--9 {
+        grid-area: unset;
     }
-    .galery__item--10{
-        grid-area:unset;
-    }
-    .footer__column__list {
-        display:none;
+
+    .galery__item--10 {
+        grid-area: unset;
     }
 }
     
