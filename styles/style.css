@@ -7,6 +7,13 @@
     font-family: 'Lato', sans-serif;
     color: #636363;
 }
+a{
+    text-decoration: none;
+}
+p{
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+}
 
 html {
 scroll-behavior: smooth;
@@ -27,27 +34,19 @@ img {
 }
 
 .header {
-    display:grid;
-    grid-area: header;
-    grid-template-columns: auto 1fr auto;
     background-color: #4e6658;
     align-content: center;
     justify-items: center;
     position: sticky;
     top: 0;
-    height: 100px;
     padding: 0 20px
 }
 
-.header__item__logo {
+.header__item__logo img {
     width: 100px;
 }
 
-.header__item__logo img {
-    max-width: 100%;
-}
-
-.navbar {
+.navbar__container {
     display: flex;
     align-items: center;
 }
@@ -76,6 +75,14 @@ img {
     font-weight: 300;
     font-size: 24px;
     text-decoration: none;
+}
+
+.navbar-toggler{
+    color: transparent;
+    border: 0;
+}
+i.fa-solid.fa-bars{
+    color: #effbf1;
 }
 
 .header__item__reservas {
@@ -469,7 +476,5 @@ background-color: #4e6658;
     .footer__column__list {
         display:none;
     }
-    
-    
-};
+}
     

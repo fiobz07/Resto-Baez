@@ -5,272 +5,292 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RestoBaez - Carta</title>
-    <link rel="stylesheet" href="../styles/style.css">
+
     <script src="https://kit.fontawesome.com/f1ca20cb91.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 
-<body class="grid">
-    <header class="header">
-        <div class="header__item__logo">
+<body class="container-fluid p-0">
+<header class="header container-fluid p-o">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-lg m-0 p-0">
+                <div class="container-fluid">
+                    <div class="header__item__logo col-2 navbar-brand">
+                        <a href="../index.html"><img src="../asset/images1/logo3.jpg" alt="RestoBaez"></a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse header__item__navbar navbar__container justify-content-center"
+                         id="navbarMenu">
+                        <ul class="navbar__menu navbar-nav m-0 p-0 mb-3 mb-lg-0 text-center">
+                            <li class="navbar__menu__item nav-item"><a href="../index.html">Inicio</a></li>
+                            <li class="navbar__menu__item active nav-item"><a href="../paginas/carta.html">Carta</a></li>
+                            <li class="navbar__menu__item nav-item"><a href="../paginas/galeria.html">Galeria</a></li>
+                            <li class="navbar__menu__item nav-item"><a href="../paginas/recetas.html">Recetas</a></li>
+                            <li class="navbar__menu__item nav-item"><a href="../paginas/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__item__reservas col-2 d-none d-lg-grid">
+                        <a href="#">
+                            <i class="fa-solid fa-utensils"></i>
+                            <p>Reservas</p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="main__image main__image--carta"></section>
+    <section class="main__section">
+        <div class="main__section__header">
+            <h1 class="main__section__header__title">
+                Carta
+            </h1>
+        </div>
+        <div class="main__section__content main__section__content--grid">
+            <div class="main__section__content__menu">
+                <h2 class="main__section__content__menu__title"> Bebidas</h2>
+                <div class="main__section__content__menu__columns">
+                    <div class="main__section__content__menu__columns__column">
+                        <div class="main__section__content__menu__items">
+                            <ul>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Limonada</p>
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Ice tea</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Agua mineral</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Agua de Jamaica</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Kombucha Ginger Ale</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main__section__content__menu__columns__column">
+                        <img src="../asset/images1/bebidas.jpg" alt="bebida">
+                    </div>
+
+                </div>
+            </div>
+            <div class="main__section__content__menu">
+                <h2 class="main__section__content__menu__title"> Bebidas con alcohol</h2>
+                <div class="main__section__content__menu__columns">
+                    <div class="main__section__content__menu__columns__column">
+                        <div class="main__section__content__menu__items">
+                            <ul>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Cerveza - Ipa</p>
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Cerveza - Apa</p>
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Gin Tonic</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Vermut</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Vinos</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main__section__content__menu__columns__column">
+                        <img src="../asset/images1/bebidas.jpg" alt="bebida">
+                    </div>
+
+                </div>
+            </div>
+            <div class="main__section__content__menu">
+                <h2 class="main__section__content__menu__title"> Platos</h2>
+                <div class="main__section__content__menu__columns">
+                    <div class="main__section__content__menu__columns__column">
+                        <div class="main__section__content__menu__items">
+                            <ul>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Ñoquis</p>
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Pizza Margarita</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Falafels</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Berenjenas con Hummus</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Mousakka</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main__section__content__menu__columns__column">
+                        <img src="../asset/images1/noquis.jpg" alt="plato de ñoquis">
+                    </div>
+
+                </div>
+            </div>
+            <div class="main__section__content__menu">
+                <h2 class="main__section__content__menu__title"> Platos</h2>
+                <div class="main__section__content__menu__columns">
+                    <div class="main__section__content__menu__columns__column">
+                        <div class="main__section__content__menu__items">
+                            <ul>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Hamburguesa de Hongos</p>
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Tacos</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Wok de Quinoa</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Empanadas</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Baos de Kimchi</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main__section__content__menu__columns__column">
+                        <img src="../asset/images1/noquis.jpg" alt="plato de comida">
+                    </div>
+
+                </div>
+            </div>
+            <div class="main__section__content__menu">
+                <h2 class="main__section__content__menu__title"> Postres</h2>
+                <div class="main__section__content__menu__columns">
+                    <div class="main__section__content__menu__columns__column">
+                        <div class="main__section__content__menu__items">
+                            <ul>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Bombones Raw con Pistachos</p>
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Tarteleta de Frutos Secos</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Brownie con Mouse de chocolate</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Torta de Zanahoria y Nueces</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Key Lime Pie</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main__section__content__menu__columns__column">
+                        <img src="../asset/images1/plato4.jpg" alt="postres">
+                    </div>
+
+                </div>
+            </div>
+            <div class="main__section__content__menu">
+                <h2 class="main__section__content__menu__title"> Postres</h2>
+                <div class="main__section__content__menu__columns">
+                    <div class="main__section__content__menu__columns__column">
+                        <div class="main__section__content__menu__items">
+                            <ul>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Torta Bruce</p>
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>CheeseCake de Frutos Rojos</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Muffins de Banana</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Volcan de Chocolate</p>
+
+                                </li>
+                                <li class="main__section__content__menu__items__item">
+                                    <p>Macarons</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main__section__content__menu__columns__column">
+                        <img src="../asset/images1/plato4.jpg" alt="postres">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer class="footer">
+    <div class="footer__column">
+        <div class="footer__column__logo">
             <a href="../index.html"><img src="../asset/images1/logo3.jpg" alt="RestoBaez"></a>
         </div>
-        <nav class="header__item__navbar navbar">
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item"><a href="../index.html">Inicio</a></li>
-                <li class="navbar__menu__item active"><a href="../paginas/carta.html">Carta</a></li>
-                <li class="navbar__menu__item"><a href="../paginas/galeria.html">Galeria</a></li>
-                <li class="navbar__menu__item"><a href="../paginas/recetas.html">Recetas</a></li>
-                <li class="navbar__menu__item"><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="header__item__reservas">
-            <a href="#">
-                <i class="fa-solid fa-utensils"></i>
-                <p>Reservas</p>
-            </a>
+    </div>
+    <div class="footer__column">
+        <ul class="footer__column__list">
+            <li class="footer__column__list__item"><a href="../index.html">Inicio</a></li>
+            <li class="footer__column__list__item"><a href="../paginas/carta.html">Carta</a></li>
+            <li class="footer__column__list__item"><a href="../paginas/galeria.html">Galeria</a></li>
+            <li class="footer__column__list__item"><a href="../paginas/recetas.html">Recetas</a></li>
+            <li class="footer__column__list__item"><a href="../paginas/contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="footer__column">
+        <div class="footer__column__social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-    </header>
-
-    <main class="main">
-        <section class="main__image main__image--carta"></section>
-        <section class="main__section">
-            <div class="main__section__header">
-                <h1 class="main__section__header__title">
-                    Carta
-                </h1>
-            </div>
-            <div class="main__section__content main__section__content--grid">
-                <div class="main__section__content__menu">
-                    <h2 class="main__section__content__menu__title"> Bebidas</h2>
-                    <div class="main__section__content__menu__columns">
-                        <div class="main__section__content__menu__columns__column">
-                            <div class="main__section__content__menu__items">
-                                <ul>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Limonada</p>
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Ice tea</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Agua mineral</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Agua de Jamaica</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Kombucha Ginger Ale</p>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="main__section__content__menu__columns__column">
-                            <img src="../asset/images1/bebidas.jpg" alt="bebida">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main__section__content__menu">
-                    <h2 class="main__section__content__menu__title"> Bebidas con alcohol</h2>
-                    <div class="main__section__content__menu__columns">
-                        <div class="main__section__content__menu__columns__column">
-                            <div class="main__section__content__menu__items">
-                                <ul>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Cerveza - Ipa</p>
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Cerveza - Apa</p>
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Gin Tonic</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Vermut</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Vinos</p>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="main__section__content__menu__columns__column">
-                            <img src="../asset/images1/bebidas.jpg" alt="bebida">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main__section__content__menu">
-                    <h2 class="main__section__content__menu__title"> Platos</h2>
-                    <div class="main__section__content__menu__columns">
-                        <div class="main__section__content__menu__columns__column">
-                            <div class="main__section__content__menu__items">
-                                <ul>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Ñoquis</p>
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Pizza Margarita</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Falafels</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Berenjenas con Hummus</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Mousakka</p>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="main__section__content__menu__columns__column">
-                            <img src="../asset/images1/noquis.jpg" alt="plato de ñoquis">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main__section__content__menu">
-                    <h2 class="main__section__content__menu__title"> Platos</h2>
-                    <div class="main__section__content__menu__columns">
-                        <div class="main__section__content__menu__columns__column">
-                            <div class="main__section__content__menu__items">
-                                <ul>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Hamburguesa de Hongos</p>
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Tacos</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Wok de Quinoa</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Empanadas</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Baos de Kimchi</p>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="main__section__content__menu__columns__column">
-                            <img src="../asset/images1/noquis.jpg" alt="plato de comida">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main__section__content__menu">
-                    <h2 class="main__section__content__menu__title"> Postres</h2>
-                    <div class="main__section__content__menu__columns">
-                        <div class="main__section__content__menu__columns__column">
-                            <div class="main__section__content__menu__items">
-                                <ul>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Bombones Raw con Pistachos</p>
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Tarteleta de Frutos Secos</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Brownie con Mouse de chocolate</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Torta de Zanahoria y Nueces</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Key Lime Pie</p>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="main__section__content__menu__columns__column">
-                            <img src="../asset/images1/plato4.jpg" alt="postres">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="main__section__content__menu">
-                    <h2 class="main__section__content__menu__title"> Postres</h2>
-                    <div class="main__section__content__menu__columns">
-                        <div class="main__section__content__menu__columns__column">
-                            <div class="main__section__content__menu__items">
-                                <ul>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Torta Bruce</p>
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>CheeseCake de Frutos Rojos</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Muffins de Banana</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Volcan de Chocolate</p>
-
-                                    </li>
-                                    <li class="main__section__content__menu__items__item">
-                                        <p>Macarons</p>
-
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="main__section__content__menu__columns__column">
-                            <img src="../asset/images1/plato4.jpg" alt="postres">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-    <footer class="footer">
-        <div class="footer__column">
-            <div class="footer__column__logo">
-                <a href="../index.html"><img src="../asset/images1/logo3.jpg" alt="RestoBaez"></a>
-            </div>
-        </div>
-        <div class="footer__column">
-            <ul class="footer__column__list">
-                <li class="footer__column__list__item"><a href="../index.html">Inicio</a></li>
-                <li class="footer__column__list__item"><a href="../paginas/carta.html">Carta</a></li>
-                <li class="footer__column__list__item"><a href="../paginas/galeria.html">Galeria</a></li>
-                <li class="footer__column__list__item"><a href="../paginas/recetas.html">Recetas</a></li>
-                <li class="footer__column__list__item"><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="footer__column">
-            <div class="footer__column__social">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
 </body>
 
 </html>

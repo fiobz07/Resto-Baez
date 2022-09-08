@@ -7,29 +7,45 @@
     <title>RestoBaez -Contacto</title>
     <link rel="stylesheet" href="../styles/style.css">
     <script src="https://kit.fontawesome.com/f1ca20cb91.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </head>
 
-<body class="grid">
-    <header class="header">
-        <div class="header__item__logo">
-            <a href="../index.html"><img src="../asset/images1/logo3.jpg" alt="RestoBaez"></a>
+<body class="container-fluid p-0">
+<header class="header container-fluid p-o">
+    <div class="row">
+        <div class="col">
+            <nav class="navbar navbar-expand-lg m-0 p-0">
+                <div class="container-fluid">
+                    <div class="header__item__logo col-2 navbar-brand">
+                        <a href="../index.html"><img src="../asset/images1/logo3.jpg" alt="RestoBaez"></a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse header__item__navbar navbar__container justify-content-center"
+                         id="navbarMenu">
+                        <ul class="navbar__menu navbar-nav m-0 p-0 mb-3 mb-lg-0 text-center">
+                            <li class="navbar__menu__item nav-item"><a href="../index.html">Inicio</a></li>
+                            <li class="navbar__menu__item nav-item"><a href="../paginas/carta.html">Carta</a></li>
+                            <li class="navbar__menu__item nav-item"><a href="../paginas/galeria.html">Galeria</a></li>
+                            <li class="navbar__menu__item nav-item"><a href="../paginas/recetas.html">Recetas</a></li>
+                            <li class="navbar__menu__item active nav-item"><a href="../paginas/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__item__reservas col-2 d-none d-lg-grid">
+                        <a href="#">
+                            <i class="fa-solid fa-utensils"></i>
+                            <p>Reservas</p>
+                        </a>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <nav class="header__item__navbar navbar">
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item"><a href="../index.html">Inicio</a></li>
-                <li class="navbar__menu__item"><a href="../paginas/carta.html">Carta</a></li>
-                <li class="navbar__menu__item"><a href="../paginas/galeria.html">Galeria</a></li>
-                <li class="navbar__menu__item "><a href="../paginas/recetas.html">Recetas</a></li>
-                <li class="navbar__menu__item active"><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="header__item__reservas">
-            <a href="#">
-                <i class="fa-solid fa-utensils"></i>
-                <p>Reservas</p>
-            </a>
-        </div>
-    </header>
+    </div>
+</header>
 
     <main class="main">
         <section class="main__image main__image--contact"></section>
