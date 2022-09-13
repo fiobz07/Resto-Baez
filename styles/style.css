@@ -219,6 +219,8 @@ img {
 
 .main__section__content__contact__columns__column__form {
   display: grid;
+  width: 90%;
+  margin: auto;
 }
 
 .main__section__content__contact__columns__column__form label {
@@ -407,7 +409,7 @@ img {
     margin-left: 8px;
   }
   .navbar__menu li a {
-    font-size: 14px;
+    font-size: 24px;
   }
   .header__item__reservas {
     display: none;
