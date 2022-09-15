@@ -33,8 +33,23 @@ img {
   z-index: 1;
 }
 
+@media screen and (max-width: 769px) {
+  .header {
+    height: auto;
+    position: initial;
+  }
+}
+
 .header__item__logo img {
   width: 100px;
+}
+
+@media screen and (max-width: 769px) {
+  .header__item__logo {
+    width: 85px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header__item__reservas {
@@ -54,6 +69,13 @@ img {
   color: #effbf1;
   font-weight: 300;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 769px) {
+  .header .navbar {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header .navbar__container {
@@ -220,7 +242,7 @@ img {
 .main__section__content__contact__columns__column__form {
   display: grid;
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .main__section__content__contact__columns__column__form label {
@@ -290,7 +312,7 @@ img {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 0.75em;
-  grid-template-areas: "item1 item1 item2 item3" "item1 item1 item4 item5" "item6 item7 item10 item10" "item8 item9 item10 item10";
+  grid-template-areas: "item1 item1 item2 item3" "item1 item1 item4 item5" "item6 item7 item10 item10" "item8 item9 item10 item10" "item11 item11 item12 item13" "item11 item11 item14 item15" "item16 item17 item18 item18" "item19 item20 item18 item18";
 }
 
 .main__section__content__galery .galery__item {
@@ -346,6 +368,46 @@ img {
 
 .main__section__content__galery .galery__item--10 {
   grid-area: item10;
+}
+
+.main__section__content__galery .galery__item--11 {
+  grid-area: item11;
+}
+
+.main__section__content__galery .galery__item--12 {
+  grid-area: item12;
+}
+
+.main__section__content__galery .galery__item--13 {
+  grid-area: item13;
+}
+
+.main__section__content__galery .galery__item--14 {
+  grid-area: item14;
+}
+
+.main__section__content__galery .galery__item--15 {
+  grid-area: item15;
+}
+
+.main__section__content__galery .galery__item--16 {
+  grid-area: item16;
+}
+
+.main__section__content__galery .galery__item--17 {
+  grid-area: item17;
+}
+
+.main__section__content__galery .galery__item--18 {
+  grid-area: item18;
+}
+
+.main__section__content__galery .galery__item--19 {
+  grid-area: item19;
+}
+
+.main__section__content__galery .galery__item--20 {
+  grid-area: item20;
 }
 
 .footer {

@@ -122,7 +122,7 @@
 						&__form {
 							display: grid;
 							width: 90%;
-							margin: auto;
+							margin: 0 auto;
 
 							label {
 								display: grid;
@@ -199,7 +199,11 @@
 				    "item1 item1 item2 item3"
 				    "item1 item1 item4 item5"
 				    "item6 item7 item10 item10"
-				    "item8 item9 item10 item10";
+				    "item8 item9 item10 item10"
+				    "item11 item11 item12 item13"
+				    "item11 item11 item14 item15"
+				    "item16 item17 item18 item18"
+				    "item19 item20 item18 item18";
 
 				.galery {
 					&__item {
@@ -256,6 +260,46 @@
 
 						&--10 {
 							grid-area: item10;
+						}
+
+						&--11 {
+							grid-area: item11;
+						}
+
+						&--12 {
+							grid-area: item12;
+						}
+
+						&--13 {
+							grid-area: item13;
+						}
+
+						&--14 {
+							grid-area: item14;
+						}
+
+						&--15 {
+							grid-area: item15;
+						}
+
+						&--16 {
+							grid-area: item16;
+						}
+
+						&--17 {
+							grid-area: item17;
+						}
+
+						&--18 {
+							grid-area: item18;
+						}
+
+						&--19 {
+							grid-area: item19;
+						}
+
+						&--20 {
+							grid-area: item20;
 						}
 					}
 				}
