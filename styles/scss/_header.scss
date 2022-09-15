@@ -7,11 +7,22 @@
 	padding: 0 20px;
 	z-index: 1;
 
+	@media screen and (max-width: $bp-mobile) {
+		height: auto;
+		position: initial;
+	}
+
 
 	&__item {
 		&__logo {
 			img {
 				width: 100px;
+			}
+
+			@media screen and (max-width: $bp-mobile) {
+				width: 85px;
+				display: flex;
+				align-items: center;
 			}
 		}
 
@@ -20,6 +31,10 @@
 			justify-content: flex-end;
 			align-items: center;
 			text-align: center;
+
+			@media screen and (max-width: $bp-mobile) {
+				display: none;
+			}
 
 			i {
 				font-size: $font-size24;
@@ -38,14 +53,28 @@
 	}
 
 	.navbar {
-		&__container {
+		@media screen and (max-width: $bp-mobile) {
 			display: flex;
 			align-items: center;
+		}
+
+		&__container {
+			@media screen and (min-width: $bp-mobile - 1px) {
+				display: flex;
+				align-items: center;
+			}
 		}
 
 		&__menu {
 			display: flex;
 			justify-content: space-between;
+
+			@media screen and (max-width: $bp-mobile) {
+				text-align: center;
+				display: grid;
+				justify-content: center;
+				align-items: center;
+			}
 
 			li {
 				list-style: none;
@@ -53,6 +82,11 @@
 				padding-bottom: 5px;
 				transition: all 0.5s ease-in-out;
 				border-bottom: 1px solid transparent;
+
+				@media screen and (max-width: $bp-mobile) {
+					margin-right: 0;
+					margin-left: 0;
+				}
 
 				&:hover {
 					border-bottom: 1px solid $honey-dew;
@@ -68,6 +102,7 @@
 					font-size: $font-size24;
 					text-decoration: none;
 				}
+
 			}
 		}
 
@@ -82,6 +117,5 @@
 	i.fa-solid.fa-bars {
 		color: $honey-dew;
 	}
-
 }
 

@@ -13,6 +13,15 @@
 		width: 100%;
 		height: 60vh;
 
+
+		@media screen and (max-width: $bp-mobile) {
+			background-size: cover;
+			background-position: center center;
+			background-attachment: initial;
+			width: 100%;
+			height: 20vh;
+		}
+
 		&--galery {
 			background-image: url(../asset/images1/galery.jpeg);
 		}
@@ -33,6 +42,10 @@
 
 
 	&__section {
+		@media screen and (max-width: $bp-mobile) {
+			padding: 50px 20px;
+		}
+
 		&__header {
 			text-align: center;
 			margin-bottom: 20px;
@@ -57,6 +70,10 @@
 				flex-direction: initial;
 				grid-template-columns: repeat(2, 1fr);
 				gap: 20px;
+
+				@media screen and (max-width: $bp-mobile) {
+					grid-template-columns: 1fr;
+				}
 			}
 
 			&__menu {
@@ -108,8 +125,16 @@
 					display: grid;
 					grid-template-columns: 1fr 1fr;
 
+					@media screen and (max-width: $bp-mobile) {
+						grid-template-columns: 1fr;
+					}
+
 					&__column {
 						padding: 50px;
+
+						@media screen and (max-width: $bp-mobile) {
+							padding: 30px 15px;
+						}
 
 						&--gray {
 							background-color: $light-grey;
@@ -205,6 +230,15 @@
 				    "item16 item17 item18 item18"
 				    "item19 item20 item18 item18";
 
+				@media screen and (max-width: $bp-mobile) {
+					display: grid;
+					grid-template-columns: 1fr;
+					grid-template-rows: auto;
+					gap: 0.75em;
+					grid-template-areas: none;
+				}
+
+
 				.galery {
 					&__item {
 						padding: 10px;
@@ -223,83 +257,123 @@
 						}
 
 						&--1 {
-							grid-area: item1;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item1;
+							}
 						}
 
 						&--2 {
-							grid-area: item2;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item2;
+							}
 						}
 
 						&--3 {
-							grid-area: item3;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item3;
+							}
 						}
 
 						&--4 {
-							grid-area: item4;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item4;
+							}
 						}
 
 						&--5 {
-							grid-area: item5;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item5;
+							}
 						}
 
 						&--6 {
-							grid-area: item6;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item6;
+							}
 						}
 
 						&--7 {
-							grid-area: item7;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item7;
+							}
 						}
 
 						&--8 {
-							grid-area: item8;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item8;
+							}
 						}
 
 						&--9 {
-							grid-area: item9;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item9;
+							}
 						}
 
 						&--10 {
-							grid-area: item10;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item10;
+							}
 						}
 
 						&--11 {
-							grid-area: item11;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item11;
+							}
 						}
 
 						&--12 {
-							grid-area: item12;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item12;
+							}
 						}
 
 						&--13 {
-							grid-area: item13;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item13;
+							}
 						}
 
 						&--14 {
-							grid-area: item14;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item14;
+							}
 						}
 
 						&--15 {
-							grid-area: item15;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item15;
+							}
 						}
 
 						&--16 {
-							grid-area: item16;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item16;
+							}
 						}
 
 						&--17 {
-							grid-area: item17;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item17;
+							}
 						}
 
 						&--18 {
-							grid-area: item18;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item18;
+							}
 						}
 
 						&--19 {
-							grid-area: item19;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item19;
+							}
 						}
 
 						&--20 {
-							grid-area: item20;
+							@media screen and (min-width: ($bp-mobile - 1px)) {
+								grid-area: item20;
+							}
 						}
 					}
 				}
