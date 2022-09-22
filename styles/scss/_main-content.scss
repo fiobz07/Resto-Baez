@@ -176,7 +176,7 @@
 								display: inline-flex;
 								justify-content: flex-end;
 
-								button {
+								.button {
 									margin-left: 10px;
 									padding: 10px 20px;
 									border-radius: 5px;
@@ -191,14 +191,15 @@
 										color: $primary-green;
 									}
 
-									&.grey {
-										background-color: $dark-green;
-										color: $primary-green;
+								}
+								.button-invert {
+									@extend .button;
+									background-color: $dark-green;
+									color: $primary-green;
 
-										&:hover {
-											background-color: $primary-green;
-											color: $honey-dew;
-										}
+									&:hover {
+										background-color: $primary-green;
+										color: $honey-dew;
 									}
 								}
 							}
@@ -256,125 +257,14 @@
 							}
 						}
 
-						&--1 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item1;
+						@each $key,$value in $galery-areas {
+
+							&--#{$key} {
+								@include gridArea($value)
 							}
+							
 						}
 
-						&--2 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item2;
-							}
-						}
-
-						&--3 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item3;
-							}
-						}
-
-						&--4 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item4;
-							}
-						}
-
-						&--5 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item5;
-							}
-						}
-
-						&--6 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item6;
-							}
-						}
-
-						&--7 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item7;
-							}
-						}
-
-						&--8 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item8;
-							}
-						}
-
-						&--9 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item9;
-							}
-						}
-
-						&--10 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item10;
-							}
-						}
-
-						&--11 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item11;
-							}
-						}
-
-						&--12 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item12;
-							}
-						}
-
-						&--13 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item13;
-							}
-						}
-
-						&--14 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item14;
-							}
-						}
-
-						&--15 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item15;
-							}
-						}
-
-						&--16 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item16;
-							}
-						}
-
-						&--17 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item17;
-							}
-						}
-
-						&--18 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item18;
-							}
-						}
-
-						&--19 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item19;
-							}
-						}
-
-						&--20 {
-							@media screen and (min-width: ($bp-mobile - 1px)) {
-								grid-area: item20;
-							}
-						}
 					}
 				}
 			}

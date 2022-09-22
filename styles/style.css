@@ -331,7 +331,7 @@ img {
   justify-content: flex-end;
 }
 
-.main__section__content__contact__columns__column__form__buttons button {
+.main__section__content__contact__columns__column__form__buttons .button, .main__section__content__contact__columns__column__form__buttons .button-invert {
   margin-left: 10px;
   padding: 10px 20px;
   border-radius: 5px;
@@ -342,17 +342,17 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-.main__section__content__contact__columns__column__form__buttons button:hover {
+.main__section__content__contact__columns__column__form__buttons .button:hover, .main__section__content__contact__columns__column__form__buttons .button-invert:hover {
   background-color: #4e66586e;
   color: #4e6658;
 }
 
-.main__section__content__contact__columns__column__form__buttons button.grey {
+.main__section__content__contact__columns__column__form__buttons .button-invert {
   background-color: #4e66586e;
   color: #4e6658;
 }
 
-.main__section__content__contact__columns__column__form__buttons button.grey:hover {
+.main__section__content__contact__columns__column__form__buttons .button-invert:hover {
   background-color: #4e6658;
   color: #effbf1;
 }
