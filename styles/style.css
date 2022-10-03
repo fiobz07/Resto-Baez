@@ -137,12 +137,21 @@ img {
 }
 
 .header .navbar-toggler {
-  color: transparent;
   border: 0;
+  outline: none;
+  color: transparent;
+  padding: 1rem 0;
 }
 
-.header i.fa-solid.fa-bars {
+.header .navbar-toggler p {
   color: #effbf1;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.header .navbar-toggler img {
+  width: 4rem;
+  margin-bottom: 0.5rem;
 }
 
 .main {

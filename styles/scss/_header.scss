@@ -108,14 +108,23 @@
 
 
 		&-toggler {
-			color: transparent;
 			border: 0;
+			outline: none;
+			color: transparent;
+			padding: 1rem 0;
+			p{
+				color: $honey-dew;
+				font-weight:  $font-weight300;
+				margin-bottom: 0;
+			}
+			img{
+				width: 4rem;
+				margin-bottom: 0.5rem;
+			}
 		}
 	}
 
 
-	i.fa-solid.fa-bars {
-		color: $honey-dew;
-	}
+
 }
 
