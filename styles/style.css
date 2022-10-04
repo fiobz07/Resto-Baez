@@ -194,7 +194,8 @@ img {
 }
 
 .main__image--contact {
-  background-image: url(../asset/images1/contac.jpg);
+  background-image: url(../asset/images1/contact1.jpg);
+  background-position-y: 10px;
 }
 
 @media screen and (max-width: 820px) {
@@ -373,7 +374,15 @@ img {
   margin-top: 20px;
 }
 
-.main__section__content__contact__columns__column__content p {
+.main__section__content__contact__columns__column__content ul {
+  list-style: none;
+}
+
+.main__section__content__contact__columns__column__content ul li {
+  color: #effbf1;
+}
+
+.main__section__content__contact__columns__column__content ul li i {
   color: #effbf1;
 }
 
